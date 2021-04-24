@@ -1,3 +1,3 @@
 #!/bin/bash
 
-oscap xccdf generate report $1 > ${2:-index.html}
+docker run --rm -v $(pwd):/openscap -it quay.io/jkeam/openscap
