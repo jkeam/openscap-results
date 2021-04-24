@@ -1,11 +1,8 @@
-FROM registry.access.redhat.com/ubi7/python-38
+FROM centos:8
 USER root
-RUN yum -y install bzip2 openscap-scanner
+RUN yum -y install bzip2 openscap-scanner python3
 USER nobody
 
 WORKDIR /openscap
 COPY app.py .
-RUN python3 app.py
-
-WORKDIR /openscap/reportsdir
-CMD ["python3", "-m", "http.server"]
+CMD ["python3", "app.py"]
