@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -v $(pwd):/openscap -it quay.io/jkeam/openscap
+docker run --rm -p 8000:8000 -v $(pwd):/openscap -it quay.io/jkeam/openscap
