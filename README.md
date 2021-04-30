@@ -3,7 +3,7 @@
 This project processes OpenSCAP results from the Compliance Operator running on OpenShift.  The Compliance Operator uses OpenSCAP to schedule and run scans.  Getting the results out and turning them into HTML reports can be a bit tricky.  This project attempts to make that easier.
 
 
-## Pre-requisite
+## Prerequisite
 This tool assumes you have a few things already installed.
 
 1. OpenShift v4.6+
